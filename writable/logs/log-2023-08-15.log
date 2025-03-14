@@ -1,0 +1,589 @@
+INFO - 2023-08-15 01:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 01:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 01:50:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 01:50:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-15 01:50:10 --> mysqli_sql_exception: Table 'db_rumahku.obat' doesn't exist in H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*)...', 0)
+#1 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 H:\setyo project\rumahku\app\Controllers\Home.php(11): CodeIgniter\Model->countAllResults()
+#6 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 H:\setyo project\rumahku\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('H:\\setyo projec...')
+#11 {main}
+CRITICAL - 2023-08-15 01:50:10 --> Table 'db_rumahku.obat' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `obat`
+WHERE `stok` <= 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `obat`
+WHERE `stok` <= 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `obat`
+WHERE `stok` <= 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `obat`
+WHERE `stok` <= 10', [], false)
+ 5 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Home.php(11): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\setyo project\\rumahku\\public\\index.php')
+INFO - 2023-08-15 01:50:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 11:06:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 11:06:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 11:06:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 11:06:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-15 11:06:42 --> mysqli_sql_exception: Table 'db_rumahku.obat' doesn't exist in H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*)...', 0)
+#1 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 H:\setyo project\rumahku\app\Controllers\Home.php(11): CodeIgniter\Model->countAllResults()
+#6 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 H:\setyo project\rumahku\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('H:\\setyo projec...')
+#11 {main}
+CRITICAL - 2023-08-15 11:06:43 --> Table 'db_rumahku.obat' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `obat`
+WHERE `stok` <= 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `obat`
+WHERE `stok` <= 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `obat`
+WHERE `stok` <= 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `obat`
+WHERE `stok` <= 10', [], false)
+ 5 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Home.php(11): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\setyo project\\rumahku\\public\\index.php')
+INFO - 2023-08-15 11:06:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 11:06:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-15 11:07:04 --> mysqli_sql_exception: Unknown column 'durasi_genang' in 'field list' in H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `b3...', 0)
+#1 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `b3...')
+#2 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `b3...')
+#3 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `b3...', Array, false)
+#4 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 H:\setyo project\rumahku\app\Controllers\Upload.php(701): CodeIgniter\Model->insert(Array)
+#8 H:\setyo project\rumahku\app\Controllers\Upload.php(103): App\Controllers\Upload->insertB3Data(Object(PhpOffice\PhpSpreadsheet\Worksheet\Worksheet), 1)
+#9 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Upload->store()
+#10 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Upload))
+#11 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 H:\setyo project\rumahku\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('H:\\setyo projec...')
+#14 {main}
+CRITICAL - 2023-08-15 11:07:04 --> Unknown column 'durasi_genang' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `b3` (`id_rt`, `tinggi_genangan`, `durasi_genang`, `frekuensi_genangan`, `luas_area_genangan`, `sumber_genangan`, `panjang_total_drainase`, `kebutuhan_drainase_baru`, `panjang_drainase_baru`, `panjang_drainase_konsdisi_baik`) VALUES (1, \'Tidak Pernah Terjadi Genangan\', NULL, NULL, 0, NULL, 0, \'Tidak\', 0, 0)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `b3` (`id_rt`, `tinggi_genangan`, `durasi_genang`, `frekuensi_genangan`, `luas_area_genangan`, `sumber_genangan`, `panjang_total_drainase`, `kebutuhan_drainase_baru`, `panjang_drainase_baru`, `panjang_drainase_konsdisi_baik`) VALUES (1, \'Tidak Pernah Terjadi Genangan\', NULL, NULL, 0, NULL, 0, \'Tidak\', 0, 0)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `b3` (`id_rt`, `tinggi_genangan`, `durasi_genang`, `frekuensi_genangan`, `luas_area_genangan`, `sumber_genangan`, `panjang_total_drainase`, `kebutuhan_drainase_baru`, `panjang_drainase_baru`, `panjang_drainase_konsdisi_baik`) VALUES (1, \'Tidak Pernah Terjadi Genangan\', NULL, NULL, 0, NULL, 0, \'Tidak\', 0, 0)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `b3` (`id_rt`, `tinggi_genangan`, `durasi_genang`, `frekuensi_genangan`, `luas_area_genangan`, `sumber_genangan`, `panjang_total_drainase`, `kebutuhan_drainase_baru`, `panjang_drainase_baru`, `panjang_drainase_konsdisi_baik`) VALUES (:id_rt:, :tinggi_genangan:, :durasi_genang:, :frekuensi_genangan:, :luas_area_genangan:, :sumber_genangan:, :panjang_total_drainase:, :kebutuhan_drainase_baru:, :panjang_drainase_baru:, :panjang_drainase_konsdisi_baik:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Upload.php(701): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Upload.php(103): App\Controllers\Upload->insertB3Data(Object(PhpOffice\PhpSpreadsheet\Worksheet\Worksheet), 1)
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Upload->store()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Upload))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\setyo project\\rumahku\\public\\index.php')
+INFO - 2023-08-15 11:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 11:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-15 11:08:28 --> Undefined variable: durasi_genang
+in APPPATH\Controllers\Upload.php on line 672.
+ 1 APPPATH\Controllers\Upload.php(672): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: durasi_genang', 'H:\\setyo project\\rumahku\\app\\Controllers\\Upload.php', 672, [...])
+ 2 APPPATH\Controllers\Upload.php(103): App\Controllers\Upload->insertB3Data(Object(PhpOffice\PhpSpreadsheet\Worksheet\Worksheet), 1)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Upload->store()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Upload))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\setyo project\\rumahku\\public\\index.php')
+INFO - 2023-08-15 11:10:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 11:10:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-15 11:10:32 --> mysqli_sql_exception: Column 'durasi_genangan' cannot be null in H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `b3...', 0)
+#1 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `b3...')
+#2 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `b3...')
+#3 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `b3...', Array, false)
+#4 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 H:\setyo project\rumahku\app\Controllers\Upload.php(701): CodeIgniter\Model->insert(Array)
+#8 H:\setyo project\rumahku\app\Controllers\Upload.php(103): App\Controllers\Upload->insertB3Data(Object(PhpOffice\PhpSpreadsheet\Worksheet\Worksheet), 1)
+#9 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Upload->store()
+#10 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Upload))
+#11 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 H:\setyo project\rumahku\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('H:\\setyo projec...')
+#14 {main}
+CRITICAL - 2023-08-15 11:10:32 --> Column 'durasi_genangan' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `b3` (`id_rt`, `tinggi_genangan`, `durasi_genangan`, `frekuensi_genangan`, `luas_area_genangan`, `sumber_genangan`, `panjang_total_drainase`, `kebutuhan_drainase_baru`, `panjang_drainase_baru`, `panjang_drainase_konsdisi_baik`) VALUES (1, \'Tidak Pernah Terjadi Genangan\', NULL, NULL, 0, NULL, 0, \'Tidak\', 0, 0)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `b3` (`id_rt`, `tinggi_genangan`, `durasi_genangan`, `frekuensi_genangan`, `luas_area_genangan`, `sumber_genangan`, `panjang_total_drainase`, `kebutuhan_drainase_baru`, `panjang_drainase_baru`, `panjang_drainase_konsdisi_baik`) VALUES (1, \'Tidak Pernah Terjadi Genangan\', NULL, NULL, 0, NULL, 0, \'Tidak\', 0, 0)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `b3` (`id_rt`, `tinggi_genangan`, `durasi_genangan`, `frekuensi_genangan`, `luas_area_genangan`, `sumber_genangan`, `panjang_total_drainase`, `kebutuhan_drainase_baru`, `panjang_drainase_baru`, `panjang_drainase_konsdisi_baik`) VALUES (1, \'Tidak Pernah Terjadi Genangan\', NULL, NULL, 0, NULL, 0, \'Tidak\', 0, 0)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `b3` (`id_rt`, `tinggi_genangan`, `durasi_genangan`, `frekuensi_genangan`, `luas_area_genangan`, `sumber_genangan`, `panjang_total_drainase`, `kebutuhan_drainase_baru`, `panjang_drainase_baru`, `panjang_drainase_konsdisi_baik`) VALUES (:id_rt:, :tinggi_genangan:, :durasi_genangan:, :frekuensi_genangan:, :luas_area_genangan:, :sumber_genangan:, :panjang_total_drainase:, :kebutuhan_drainase_baru:, :panjang_drainase_baru:, :panjang_drainase_konsdisi_baik:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Upload.php(701): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Upload.php(103): App\Controllers\Upload->insertB3Data(Object(PhpOffice\PhpSpreadsheet\Worksheet\Worksheet), 1)
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Upload->store()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Upload))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\setyo project\\rumahku\\public\\index.php')
+INFO - 2023-08-15 11:12:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 11:12:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 11:13:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 13:49:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 13:49:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 13:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 13:49:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-15 13:49:28 --> mysqli_sql_exception: Table 'db_rumahku.obat' doesn't exist in H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*)...', 0)
+#1 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 H:\setyo project\rumahku\app\Controllers\Home.php(11): CodeIgniter\Model->countAllResults()
+#6 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 H:\setyo project\rumahku\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('H:\\setyo projec...')
+#11 {main}
+CRITICAL - 2023-08-15 13:49:28 --> Table 'db_rumahku.obat' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `obat`
+WHERE `stok` <= 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `obat`
+WHERE `stok` <= 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `obat`
+WHERE `stok` <= 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `obat`
+WHERE `stok` <= 10', [], false)
+ 5 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Home.php(11): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\setyo project\\rumahku\\public\\index.php')
+INFO - 2023-08-15 13:49:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 13:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 13:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 13:50:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-15 13:50:48 --> mysqli_sql_exception: Table 'db_rumahku.obat' doesn't exist in H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*)...', 0)
+#1 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 H:\setyo project\rumahku\app\Controllers\Home.php(11): CodeIgniter\Model->countAllResults()
+#6 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 H:\setyo project\rumahku\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('H:\\setyo projec...')
+#11 {main}
+CRITICAL - 2023-08-15 13:50:48 --> Table 'db_rumahku.obat' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `obat`
+WHERE `stok` <= 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `obat`
+WHERE `stok` <= 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `obat`
+WHERE `stok` <= 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `obat`
+WHERE `stok` <= 10', [], false)
+ 5 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Home.php(11): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\setyo project\\rumahku\\public\\index.php')
+INFO - 2023-08-15 13:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 13:59:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:00:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:00:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:00:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:02:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:02:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:02:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-15 14:02:17 --> mysqli_sql_exception: Table 'db_rumahku.obat' doesn't exist in H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 H:\setyo project\rumahku\app\Controllers\Obat.php(13): CodeIgniter\BaseModel->findAll()
+#7 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Obat->index()
+#8 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Obat))
+#9 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 H:\setyo project\rumahku\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('H:\\setyo projec...')
+#12 {main}
+CRITICAL - 2023-08-15 14:02:17 --> Table 'db_rumahku.obat' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `obat`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `obat`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `obat`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `obat`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Obat.php(13): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Obat->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Obat))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\setyo project\\rumahku\\public\\index.php')
+INFO - 2023-08-15 14:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:02:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:02:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:02:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:04:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:04:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:24:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-15 14:24:52 --> mysqli_sql_exception: Table 'db_rumahku.districs' doesn't exist in H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `data_rt...', 0)
+#1 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data_rt...')
+#2 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data_rt...')
+#3 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_rt...', Array, false)
+#4 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 H:\setyo project\rumahku\app\Controllers\RT.php(20): CodeIgniter\BaseModel->findAll()
+#7 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\RT->index()
+#8 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RT))
+#9 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 H:\setyo project\rumahku\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('H:\\setyo projec...')
+#12 {main}
+CRITICAL - 2023-08-15 14:24:52 --> Table 'db_rumahku.districs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `data_rt`.*, `provinces`.`prov_name`, `cities`.`city_name`, `districs`.`dis_name`, `subdistrics`.`subdis_name`, `data_rt`.`id` as `id`
+FROM `data_rt`
+JOIN `provinces` ON `data_rt`.`id_prov` = `provinces`.`id_prov`
+JOIN `cities` ON `data_rt`.`city_id` = `cities`.`city_id`
+JOIN `districs` ON `data_rt`.`dis_id` = `districs`.`dis_id`
+JOIN `subdistrics` ON `data_rt`.`subdis_id` = `subdistrics`.`subdis_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data_rt`.*, `provinces`.`prov_name`, `cities`.`city_name`, `districs`.`dis_name`, `subdistrics`.`subdis_name`, `data_rt`.`id` as `id`
+FROM `data_rt`
+JOIN `provinces` ON `data_rt`.`id_prov` = `provinces`.`id_prov`
+JOIN `cities` ON `data_rt`.`city_id` = `cities`.`city_id`
+JOIN `districs` ON `data_rt`.`dis_id` = `districs`.`dis_id`
+JOIN `subdistrics` ON `data_rt`.`subdis_id` = `subdistrics`.`subdis_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data_rt`.*, `provinces`.`prov_name`, `cities`.`city_name`, `districs`.`dis_name`, `subdistrics`.`subdis_name`, `data_rt`.`id` as `id`
+FROM `data_rt`
+JOIN `provinces` ON `data_rt`.`id_prov` = `provinces`.`id_prov`
+JOIN `cities` ON `data_rt`.`city_id` = `cities`.`city_id`
+JOIN `districs` ON `data_rt`.`dis_id` = `districs`.`dis_id`
+JOIN `subdistrics` ON `data_rt`.`subdis_id` = `subdistrics`.`subdis_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_rt`.*, `provinces`.`prov_name`, `cities`.`city_name`, `districs`.`dis_name`, `subdistrics`.`subdis_name`, `data_rt`.`id` as `id`
+FROM `data_rt`
+JOIN `provinces` ON `data_rt`.`id_prov` = `provinces`.`id_prov`
+JOIN `cities` ON `data_rt`.`city_id` = `cities`.`city_id`
+JOIN `districs` ON `data_rt`.`dis_id` = `districs`.`dis_id`
+JOIN `subdistrics` ON `data_rt`.`subdis_id` = `subdistrics`.`subdis_id`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\RT.php(20): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RT->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RT))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\setyo project\\rumahku\\public\\index.php')
+INFO - 2023-08-15 14:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-15 14:25:13 --> mysqli_sql_exception: Unknown column 'data_rt.id' in 'field list' in H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `data_rt...', 0)
+#1 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data_rt...')
+#2 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data_rt...')
+#3 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_rt...', Array, false)
+#4 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 H:\setyo project\rumahku\app\Controllers\RT.php(20): CodeIgniter\BaseModel->findAll()
+#7 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\RT->index()
+#8 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RT))
+#9 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 H:\setyo project\rumahku\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('H:\\setyo projec...')
+#12 {main}
+CRITICAL - 2023-08-15 14:25:13 --> Unknown column 'data_rt.id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `data_rt`.*, `provinces`.`prov_name`, `cities`.`city_name`, `districts`.`dis_name`, `subdistricts`.`subdis_name`, `data_rt`.`id` as `id`
+FROM `data_rt`
+JOIN `provinces` ON `data_rt`.`id_prov` = `provinces`.`id_prov`
+JOIN `cities` ON `data_rt`.`city_id` = `cities`.`city_id`
+JOIN `districts` ON `data_rt`.`dis_id` = `districts`.`dis_id`
+JOIN `subdistricts` ON `data_rt`.`subdis_id` = `subdistricts`.`subdis_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data_rt`.*, `provinces`.`prov_name`, `cities`.`city_name`, `districts`.`dis_name`, `subdistricts`.`subdis_name`, `data_rt`.`id` as `id`
+FROM `data_rt`
+JOIN `provinces` ON `data_rt`.`id_prov` = `provinces`.`id_prov`
+JOIN `cities` ON `data_rt`.`city_id` = `cities`.`city_id`
+JOIN `districts` ON `data_rt`.`dis_id` = `districts`.`dis_id`
+JOIN `subdistricts` ON `data_rt`.`subdis_id` = `subdistricts`.`subdis_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data_rt`.*, `provinces`.`prov_name`, `cities`.`city_name`, `districts`.`dis_name`, `subdistricts`.`subdis_name`, `data_rt`.`id` as `id`
+FROM `data_rt`
+JOIN `provinces` ON `data_rt`.`id_prov` = `provinces`.`id_prov`
+JOIN `cities` ON `data_rt`.`city_id` = `cities`.`city_id`
+JOIN `districts` ON `data_rt`.`dis_id` = `districts`.`dis_id`
+JOIN `subdistricts` ON `data_rt`.`subdis_id` = `subdistricts`.`subdis_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_rt`.*, `provinces`.`prov_name`, `cities`.`city_name`, `districts`.`dis_name`, `subdistricts`.`subdis_name`, `data_rt`.`id` as `id`
+FROM `data_rt`
+JOIN `provinces` ON `data_rt`.`id_prov` = `provinces`.`id_prov`
+JOIN `cities` ON `data_rt`.`city_id` = `cities`.`city_id`
+JOIN `districts` ON `data_rt`.`dis_id` = `districts`.`dis_id`
+JOIN `subdistricts` ON `data_rt`.`subdis_id` = `subdistricts`.`subdis_id`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\RT.php(20): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RT->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RT))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\setyo project\\rumahku\\public\\index.php')
+INFO - 2023-08-15 14:25:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-15 14:25:31 --> mysqli_sql_exception: Unknown column 'data_rt.id_prov' in 'on clause' in H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `data_rt...', 0)
+#1 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data_rt...')
+#2 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data_rt...')
+#3 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_rt...', Array, false)
+#4 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 H:\setyo project\rumahku\app\Controllers\RT.php(20): CodeIgniter\BaseModel->findAll()
+#7 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\RT->index()
+#8 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RT))
+#9 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 H:\setyo project\rumahku\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('H:\\setyo projec...')
+#12 {main}
+CRITICAL - 2023-08-15 14:25:31 --> Unknown column 'data_rt.id_prov' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `data_rt`.*, `provinces`.`prov_name`, `cities`.`city_name`, `districts`.`dis_name`, `subdistricts`.`subdis_name`
+FROM `data_rt`
+JOIN `provinces` ON `data_rt`.`id_prov` = `provinces`.`id_prov`
+JOIN `cities` ON `data_rt`.`city_id` = `cities`.`city_id`
+JOIN `districts` ON `data_rt`.`dis_id` = `districts`.`dis_id`
+JOIN `subdistricts` ON `data_rt`.`subdis_id` = `subdistricts`.`subdis_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data_rt`.*, `provinces`.`prov_name`, `cities`.`city_name`, `districts`.`dis_name`, `subdistricts`.`subdis_name`
+FROM `data_rt`
+JOIN `provinces` ON `data_rt`.`id_prov` = `provinces`.`id_prov`
+JOIN `cities` ON `data_rt`.`city_id` = `cities`.`city_id`
+JOIN `districts` ON `data_rt`.`dis_id` = `districts`.`dis_id`
+JOIN `subdistricts` ON `data_rt`.`subdis_id` = `subdistricts`.`subdis_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data_rt`.*, `provinces`.`prov_name`, `cities`.`city_name`, `districts`.`dis_name`, `subdistricts`.`subdis_name`
+FROM `data_rt`
+JOIN `provinces` ON `data_rt`.`id_prov` = `provinces`.`id_prov`
+JOIN `cities` ON `data_rt`.`city_id` = `cities`.`city_id`
+JOIN `districts` ON `data_rt`.`dis_id` = `districts`.`dis_id`
+JOIN `subdistricts` ON `data_rt`.`subdis_id` = `subdistricts`.`subdis_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_rt`.*, `provinces`.`prov_name`, `cities`.`city_name`, `districts`.`dis_name`, `subdistricts`.`subdis_name`
+FROM `data_rt`
+JOIN `provinces` ON `data_rt`.`id_prov` = `provinces`.`id_prov`
+JOIN `cities` ON `data_rt`.`city_id` = `cities`.`city_id`
+JOIN `districts` ON `data_rt`.`dis_id` = `districts`.`dis_id`
+JOIN `subdistricts` ON `data_rt`.`subdis_id` = `subdistricts`.`subdis_id`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\RT.php(20): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RT->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RT))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\setyo project\\rumahku\\public\\index.php')
+INFO - 2023-08-15 14:25:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-15 14:25:48 --> Invalid file: "rt.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('rt.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('rt', [], true)
+ 3 APPPATH\Controllers\RT.php(25): view('rt', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RT->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RT))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\setyo project\\rumahku\\public\\index.php')
+INFO - 2023-08-15 14:26:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-15 14:26:07 --> Undefined variable: obat
+in APPPATH\Views\rt\rt.php on line 50.
+ 1 APPPATH\Views\rt\rt.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: obat', 'H:\\setyo project\\rumahku\\app\\Views\\rt\\rt.php', 50, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('H:\\setyo project\\rumahku\\app\\Views\\rt\\rt.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('rt/rt', [], true)
+ 5 APPPATH\Controllers\RT.php(25): view('rt/rt', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RT->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RT))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\setyo project\\rumahku\\public\\index.php')
+INFO - 2023-08-15 14:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:29:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:33:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-15 14:33:08 --> A non-numeric value encountered
+in APPPATH\Views\rt\rt.php on line 108.
+ 1 APPPATH\Views\rt\rt.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'H:\\setyo project\\rumahku\\app\\Views\\rt\\rt.php', 108, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('H:\\setyo project\\rumahku\\app\\Views\\rt\\rt.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('rt/rt', [], true)
+ 5 APPPATH\Controllers\RT.php(42): view('rt/rt', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RT->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RT))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\setyo project\\rumahku\\public\\index.php')
+INFO - 2023-08-15 14:33:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:48:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:48:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-15 14:48:04 --> Undefined variable: idRT
+in APPPATH\Views\rt\detail.php on line 53.
+ 1 APPPATH\Views\rt\detail.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: idRT', 'H:\\setyo project\\rumahku\\app\\Views\\rt\\detail.php', 53, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('H:\\setyo project\\rumahku\\app\\Views\\rt\\detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('rt/detail', [], true)
+ 5 APPPATH\Controllers\RT.php(68): view('rt/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RT->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RT))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\setyo project\\rumahku\\public\\index.php')
+INFO - 2023-08-15 14:48:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:48:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:48:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:49:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:49:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:49:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:49:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:53:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:54:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:57:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:57:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:57:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:57:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 14:57:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 15:10:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 15:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-15 15:10:03 --> mysqli_sql_exception: Unknown column 'warga.id' in 'where clause' in H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '1')
+#6 H:\setyo project\rumahku\app\Controllers\RT.php(92): CodeIgniter\BaseModel->find('1')
+#7 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\RT->detailWarga('1')
+#8 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RT))
+#9 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 H:\setyo project\rumahku\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('H:\\setyo projec...')
+#12 {main}
+CRITICAL - 2023-08-15 15:10:03 --> Unknown column 'warga.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `warga`
+WHERE `warga`.`id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `warga`
+WHERE `warga`.`id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `warga`
+WHERE `warga`.`id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `warga`
+WHERE `warga`.`id` = :warga.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '1')
+ 7 APPPATH\Controllers\RT.php(92): CodeIgniter\BaseModel->find('1')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RT->detailWarga('1')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RT))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\setyo project\\rumahku\\public\\index.php')
+INFO - 2023-08-15 15:10:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-15 15:10:22 --> Undefined variable: idRT
+in APPPATH\Views\rt\detail.php on line 52.
+ 1 APPPATH\Views\rt\detail.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: idRT', 'H:\\setyo project\\rumahku\\app\\Views\\rt\\detail.php', 52, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('H:\\setyo project\\rumahku\\app\\Views\\rt\\detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('rt/detail', [], true)
+ 5 APPPATH\Controllers\RT.php(106): view('rt/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RT->detailWarga('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RT))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\setyo project\\rumahku\\public\\index.php')
+INFO - 2023-08-15 15:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 15:18:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 15:19:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 15:20:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 15:25:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 15:25:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-15 15:25:42 --> Undefined variable: a1Data
+in APPPATH\Views\rt\detail-lingkungan.php on line 48.
+ 1 APPPATH\Views\rt\detail-lingkungan.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: a1Data', 'H:\\setyo project\\rumahku\\app\\Views\\rt\\detail-lingkungan.php', 48, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('H:\\setyo project\\rumahku\\app\\Views\\rt\\detail-lingkungan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('rt/detail-lingkungan', [], true)
+ 5 APPPATH\Controllers\RT.php(154): view('rt/detail-lingkungan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RT->detailLingkungan('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RT))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\setyo project\\rumahku\\public\\index.php')
+INFO - 2023-08-15 15:41:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 15:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 15:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 15:42:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 15:42:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 15:42:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 15:42:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 15:43:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-15 15:58:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

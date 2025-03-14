@@ -1,0 +1,66 @@
+INFO - 2023-10-25 00:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-25 00:56:45 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'db_rumahku', 3306, '', 0)
+#1 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_rt...', Array, false)
+#4 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 H:\setyo project\rumahku\app\Controllers\Kelurahan.php(30): CodeIgniter\BaseModel->findAll()
+#7 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Kelurahan->index()
+#8 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelurahan))
+#9 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 H:\setyo project\rumahku\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('H:\\setyo projec...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_rt...', Array, false)
+#3 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 H:\setyo project\rumahku\app\Controllers\Kelurahan.php(30): CodeIgniter\BaseModel->findAll()
+#6 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Kelurahan->index()
+#7 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelurahan))
+#8 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 H:\setyo project\rumahku\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 H:\setyo project\rumahku\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('H:\\setyo projec...')
+#11 {main}
+CRITICAL - 2023-10-25 00:56:45 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_rt`.*, `provinces`.`prov_name`, `cities`.`city_name`, `districts`.`dis_name`
+FROM `data_rt`
+JOIN `provinces` ON `data_rt`.`prov_id` = `provinces`.`prov_id`
+JOIN `cities` ON `data_rt`.`city_id` = `cities`.`city_id`
+JOIN `districts` ON `data_rt`.`dis_id` = `districts`.`dis_id`
+GROUP BY `provinces`.`prov_name`, `cities`.`city_name`, `districts`.`dis_name`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Kelurahan.php(30): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Kelurahan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelurahan))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\setyo project\\rumahku\\public\\index.php')
+INFO - 2023-10-25 00:57:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 00:57:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 00:58:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 00:58:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 00:58:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 00:59:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 00:59:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 00:59:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 00:59:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 00:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 00:59:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 00:59:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 01:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 01:02:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
